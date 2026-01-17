@@ -1,0 +1,616 @@
+kind: Node
+apiVersion: v1
+metadata:
+  name: ip-10-250-18-165.ap-southeast-1.compute.internal
+  uid: c9312def-5cd4-49d0-9b81-28dc56324a7a
+  resourceVersion: '141707'
+  creationTimestamp: '2026-01-17T05:19:52Z'
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/instance-type: m5.xlarge
+    beta.kubernetes.io/os: linux
+    failure-domain.beta.kubernetes.io/region: ap-southeast-1
+    failure-domain.beta.kubernetes.io/zone: ap-southeast-1a
+    kubernetes.io/arch: amd64
+    kubernetes.io/hostname: ip-10-250-18-165.ap-southeast-1.compute.internal
+    kubernetes.io/os: linux
+    networking.gardener.cloud/node-local-dns-enabled: 'true'
+    node-role.kubernetes.io/worker: ''
+    node.gardener.cloud/machine-name: shoot--kyma--c-06580ab-cpu-worker-0-z1-787c4-6d95j
+    node.kubernetes.io/instance-type: m5.xlarge
+    node.kubernetes.io/role: node
+    topology.ebs.csi.aws.com/zone: ap-southeast-1a
+    topology.k8s.aws/zone-id: apse1-az1
+    topology.kubernetes.io/region: ap-southeast-1
+    topology.kubernetes.io/zone: ap-southeast-1a
+    worker.garden.sapcloud.io/group: cpu-worker-0
+    worker.gardener.cloud/cri-name: containerd
+    worker.gardener.cloud/gardener-node-agent-secret-name: gardener-node-agent-cpu-worker-0-c6e74a4523c4878a
+    worker.gardener.cloud/kubernetes-version: 1.33.5
+    worker.gardener.cloud/pool: cpu-worker-0
+    worker.gardener.cloud/system-components: 'true'
+  annotations:
+    checksum/cloud-config-data: b0054072489cbe0b96e9e622ebcd4bafb9b140f2022de68fc70ffb2e87ad074a
+    csi.volume.kubernetes.io/nodeid: '{"ebs.csi.aws.com":"i-0d05673443092e085"}'
+    node-agent.gardener.cloud/reconciliation-delay: 0s
+    node.alpha.kubernetes.io/ttl: '0'
+    node.machine.sapcloud.io/last-applied-anno-labels-taints: >-
+      {"metadata":{"creationTimestamp":null,"labels":{"kubernetes.io/arch":"amd64","networking.gardener.cloud/node-local-dns-enabled":"true","node.kubernetes.io/role":"node","topology.ebs.csi.aws.com/zone":"ap-southeast-1a","topology.kubernetes.io/zone":"ap-southeast-1a","worker.garden.sapcloud.io/group":"cpu-worker-0","worker.gardener.cloud/cri-name":"containerd","worker.gardener.cloud/gardener-node-agent-secret-name":"gardener-node-agent-cpu-worker-0-c6e74a4523c4878a","worker.gardener.cloud/pool":"cpu-worker-0","worker.gardener.cloud/system-components":"true"}},"spec":{}}
+    volumes.kubernetes.io/controller-managed-attach-detach: 'true'
+  managedFields:
+    - manager: ancient-changes
+      operation: Update
+      apiVersion: v1
+      time: '2026-01-17T05:19:52Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:labels:
+            f:beta.kubernetes.io/instance-type: {}
+            f:failure-domain.beta.kubernetes.io/region: {}
+            f:failure-domain.beta.kubernetes.io/zone: {}
+            f:node.kubernetes.io/instance-type: {}
+            f:topology.k8s.aws/zone-id: {}
+            f:topology.kubernetes.io/region: {}
+            f:topology.kubernetes.io/zone: {}
+        f:spec:
+          f:providerID: {}
+        f:status:
+          f:addresses:
+            k:{"type":"InternalDNS"}:
+              .: {}
+              f:address: {}
+              f:type: {}
+            k:{"type":"InternalIP"}:
+              .: {}
+              f:address: {}
+              f:type: {}
+    - manager: gardener-resource-manager
+      operation: Update
+      apiVersion: v1
+      time: '2026-01-17T05:19:52Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            f:node-agent.gardener.cloud/reconciliation-delay: {}
+    - manager: kubelet
+      operation: Update
+      apiVersion: v1
+      time: '2026-01-17T05:19:52Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:volumes.kubernetes.io/controller-managed-attach-detach: {}
+          f:labels:
+            .: {}
+            f:beta.kubernetes.io/arch: {}
+            f:beta.kubernetes.io/os: {}
+            f:kubernetes.io/arch: {}
+            f:kubernetes.io/hostname: {}
+            f:kubernetes.io/os: {}
+            f:networking.gardener.cloud/node-local-dns-enabled: {}
+            f:node.kubernetes.io/role: {}
+            f:worker.garden.sapcloud.io/group: {}
+            f:worker.gardener.cloud/cri-name: {}
+            f:worker.gardener.cloud/gardener-node-agent-secret-name: {}
+            f:worker.gardener.cloud/kubernetes-version: {}
+            f:worker.gardener.cloud/pool: {}
+            f:worker.gardener.cloud/system-components: {}
+    - manager: gardener-node-agent
+      operation: Update
+      apiVersion: v1
+      time: '2026-01-17T05:19:57Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            f:checksum/cloud-config-data: {}
+          f:labels:
+            f:node-role.kubernetes.io/worker: {}
+    - manager: machine-controller
+      operation: Update
+      apiVersion: v1
+      time: '2026-01-17T05:20:20Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            f:node.machine.sapcloud.io/last-applied-anno-labels-taints: {}
+          f:labels:
+            f:node.gardener.cloud/machine-name: {}
+            f:topology.ebs.csi.aws.com/zone: {}
+    - manager: kube-controller-manager
+      operation: Update
+      apiVersion: v1
+      time: '2026-01-17T05:21:05Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            f:node.alpha.kubernetes.io/ttl: {}
+        f:spec:
+          f:podCIDR: {}
+          f:podCIDRs:
+            .: {}
+            v:"10.96.0.0/24": {}
+    - manager: kubelet
+      operation: Update
+      apiVersion: v1
+      time: '2026-01-17T09:27:24Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            f:csi.volume.kubernetes.io/nodeid: {}
+        f:status:
+          f:conditions:
+            k:{"type":"DiskPressure"}:
+              f:lastHeartbeatTime: {}
+            k:{"type":"MemoryPressure"}:
+              f:lastHeartbeatTime: {}
+            k:{"type":"PIDPressure"}:
+              f:lastHeartbeatTime: {}
+            k:{"type":"Ready"}:
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+          f:images: {}
+      subresource: status
+    - manager: network-problem-detector-host
+      operation: Update
+      apiVersion: v1
+      time: '2026-01-17T09:28:38Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:conditions:
+            k:{"type":"HostNetworkProblem"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+      subresource: status
+    - manager: node-problem-detector
+      operation: Update
+      apiVersion: v1
+      time: '2026-01-17T09:29:41Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:conditions:
+            k:{"type":"CorruptDockerOverlay2"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"CperHardwareErrorFatal"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"FrequentContainerdRestart"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"FrequentDockerRestart"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"FrequentKubeletRestart"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"FrequentUnregisterNetDevice"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"KernelDeadlock"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"ReadonlyFilesystem"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+            k:{"type":"XfsShutdown"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+      subresource: status
+    - manager: network-problem-detector-pod
+      operation: Update
+      apiVersion: v1
+      time: '2026-01-17T09:30:14Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:conditions:
+            k:{"type":"ClusterNetworkProblem"}:
+              .: {}
+              f:lastHeartbeatTime: {}
+              f:lastTransitionTime: {}
+              f:message: {}
+              f:reason: {}
+              f:status: {}
+              f:type: {}
+      subresource: status
+spec:
+  podCIDR: 10.96.0.0/24
+  podCIDRs:
+    - 10.96.0.0/24
+  providerID: aws:///ap-southeast-1a/i-0d05673443092e085
+status:
+  capacity:
+    cpu: '4'
+    ephemeral-storage: 50168096Ki
+    hugepages-1Gi: '0'
+    hugepages-2Mi: '0'
+    memory: 16001580Ki
+    pods: '110'
+  allocatable:
+    cpu: 3920m
+    ephemeral-storage: '48803523751'
+    hugepages-1Gi: '0'
+    hugepages-2Mi: '0'
+    memory: 14850604Ki
+    pods: '110'
+  conditions:
+    - type: ClusterNetworkProblem
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:30:14Z'
+      lastTransitionTime: '2026-01-17T05:23:19Z'
+      reason: NoNetworkProblems
+      message: no cluster network problems
+    - type: FrequentContainerdRestart
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:29:41Z'
+      lastTransitionTime: '2026-01-17T06:14:19Z'
+      reason: NoFrequentContainerdRestart
+      message: containerd is functioning properly
+    - type: XfsShutdown
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:29:41Z'
+      lastTransitionTime: '2026-01-17T06:14:19Z'
+      reason: XfsHasNotShutDown
+      message: XFS has not shutdown
+    - type: CorruptDockerOverlay2
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:29:41Z'
+      lastTransitionTime: '2026-01-17T06:14:19Z'
+      reason: NoCorruptDockerOverlay2
+      message: docker overlay2 is functioning properly
+    - type: FrequentKubeletRestart
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:29:41Z'
+      lastTransitionTime: '2026-01-17T06:14:19Z'
+      reason: NoFrequentKubeletRestart
+      message: kubelet is functioning properly
+    - type: FrequentUnregisterNetDevice
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:29:41Z'
+      lastTransitionTime: '2026-01-17T06:14:19Z'
+      reason: NoFrequentUnregisterNetDevice
+      message: node is functioning properly
+    - type: FrequentDockerRestart
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:29:41Z'
+      lastTransitionTime: '2026-01-17T06:14:19Z'
+      reason: NoFrequentDockerRestart
+      message: docker is functioning properly
+    - type: KernelDeadlock
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:29:41Z'
+      lastTransitionTime: '2026-01-17T06:14:19Z'
+      reason: KernelHasNoDeadlock
+      message: kernel has no deadlock
+    - type: CperHardwareErrorFatal
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:29:41Z'
+      lastTransitionTime: '2026-01-17T06:14:19Z'
+      reason: CperHardwareHasNoFatalError
+      message: UEFI CPER has no fatal error
+    - type: ReadonlyFilesystem
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:29:41Z'
+      lastTransitionTime: '2026-01-17T06:14:19Z'
+      reason: FilesystemIsNotReadOnly
+      message: Filesystem is not read-only
+    - type: HostNetworkProblem
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:28:38Z'
+      lastTransitionTime: '2026-01-17T05:21:13Z'
+      reason: NoNetworkProblems
+      message: no host network problems
+    - type: MemoryPressure
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:27:24Z'
+      lastTransitionTime: '2026-01-17T05:19:52Z'
+      reason: KubeletHasSufficientMemory
+      message: kubelet has sufficient memory available
+    - type: DiskPressure
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:27:24Z'
+      lastTransitionTime: '2026-01-17T05:19:52Z'
+      reason: KubeletHasNoDiskPressure
+      message: kubelet has no disk pressure
+    - type: PIDPressure
+      status: 'False'
+      lastHeartbeatTime: '2026-01-17T09:27:24Z'
+      lastTransitionTime: '2026-01-17T05:19:52Z'
+      reason: KubeletHasSufficientPID
+      message: kubelet has sufficient PID available
+    - type: Ready
+      status: 'True'
+      lastHeartbeatTime: '2026-01-17T09:27:24Z'
+      lastTransitionTime: '2026-01-17T05:21:03Z'
+      reason: KubeletReady
+      message: kubelet is posting ready status
+  addresses:
+    - type: InternalIP
+      address: 10.250.18.165
+    - type: InternalDNS
+      address: ip-10-250-18-165.ap-southeast-1.compute.internal
+    - type: Hostname
+      address: ip-10-250-18-165.ap-southeast-1.compute.internal
+  daemonEndpoints:
+    kubeletEndpoint:
+      Port: 10250
+  nodeInfo:
+    machineID: ec29cdb19f70caace321ca840d0a6f6a
+    systemUUID: ec29cdb1-9f70-caac-e321-ca840d0a6f6a
+    bootID: 0daa6ae6-600d-4e88-9264-d72970a43567
+    kernelVersion: 6.12.47-cloud-amd64
+    osImage: Garden Linux 1877.4
+    containerRuntimeVersion: containerd://2.1.4
+    kubeletVersion: v1.33.5
+    kubeProxyVersion: ''
+    operatingSystem: linux
+    architecture: amd64
+  images:
+    - names:
+        - >-
+          docker.io/sapse/connectivity-proxy@sha256:a67deb1023ba44dacd0035c5effb14304037399bef470953ed42612043a0bd8e
+        - docker.io/sapse/connectivity-proxy:2.13.0
+      sizeBytes: 358398201
+    - names:
+        - >-
+          docker.io/sapse/connectivity-proxy-operator@sha256:b9e00b573694de53a3d432d3ece9bcd76b7a19c6866f6de2e416fc42741707c2
+        - docker.io/sapse/connectivity-proxy-operator:2.13.2
+      sizeBytes: 329982668
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/quay_io/calico/node@sha256:f2906f5026364143c932a777b94b7d7db70ec48294e3cf4079a59e0bd2fcf25e
+      sizeBytes: 153893756
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/quay_io/calico/cni@sha256:13177b9dbe14c23a1ace189c5d28a90956eb3b6f21e117f6d20d73f4518728ee
+      sizeBytes: 71111674
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/node-problem-detector/node-problem-detector@sha256:2ff8d26b316cc189b9c6a1cfe286923fcdbec573158d640833927576a30d6f35
+      sizeBytes: 69184160
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/external/istio/proxyv2@sha256:073839e98330a7e1700fca91e2f05c5584f8f2138fdf24e516d6bf4d1f063398
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/external/istio/proxyv2:1.27.4-distroless
+      sizeBytes: 56266030
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/istio/releases/istio-manager@sha256:924d9df64d78b3006bdc88fbed005a482c8ccfc2ea67143f231e59388821bad1
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/istio/releases/istio-manager:1.24.3
+      sizeBytes: 54842062
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/external/istio/install-cni@sha256:0445bb92e9c21f6d1e9cb21dcf5880ea6cfb77004284ade3ad3b53d13e8698c1
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/external/istio/install-cni:1.27.4-distroless
+      sizeBytes: 47700152
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/dns/k8s-dns-node-cache@sha256:6392e6bf4fe2e15f68bcac2980c11f30d0abfca1eeda1142ee557557299b4792
+      sizeBytes: 44859603
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/registry-proxy-operator@sha256:a838ecfdfc75710a630933692bf02a80f5d200a074d63ca1994e07b46800c136
+        - europe-docker.pkg.dev/kyma-project/prod/registry-proxy-operator:0.14.0
+      sizeBytes: 40619157
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/external/istio/pilot@sha256:86a1a52aae993a78a6b9abe4fb4a66bd5b9a91fe59142560086fbbebbd230566
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/external/istio/pilot:1.27.4-distroless
+      sizeBytes: 36298128
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/provider-aws/aws-ebs-csi-driver@sha256:552c0e18cb286d3e42237c0825347abb3d05ccb28343f469ecac8d083a2f56d7
+      sizeBytes: 35897526
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/europe-docker_pkg_dev/gardener-project/releases/3rd/envoyproxy/envoy@sha256:8b61712b40ba37eff494630e9456f10b4aec1f5063c7da853d53cae995526116
+      sizeBytes: 35162877
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/quay_io/calico/typha@sha256:decdbae18859edfb5d735870dd562f48743813e5f08580c712fdf48ec0100618
+      sizeBytes: 34810107
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/external/quay.io/brancz/kube-rbac-proxy@sha256:147cb28fea35473b2cf8697892d375bbe0aec237c5740b0368719b4c0d71b290
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/external/quay.io/brancz/kube-rbac-proxy:v0.20.0
+      sizeBytes: 33937278
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/registry-proxy-controller@sha256:728177beffa283e7a3d301a8d417a5f2c829b10b4d7e574503b673975ee1e8c2
+        - europe-docker.pkg.dev/kyma-project/prod/registry-proxy-controller:main
+      sizeBytes: 32047217
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/kube-proxy@sha256:8f2a8a0546b4a827e5440c2917454743daebd89bdf100b4cb3b38764e652f647
+      sizeBytes: 31204310
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/external/ghcr.io/sap/sap-btp-service-operator/controller@sha256:1620fc746a82d25c8622e3f705c110dd505b7776e5f6235f2df0bcb13fb783ce
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/external/ghcr.io/sap/sap-btp-service-operator/controller:v0.9.6
+      sizeBytes: 30834249
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/warden/operator@sha256:7df2fcf08fe476f570d492a86c5e149ed449883b9042c07d29fc62dd943314d3
+        - europe-docker.pkg.dev/kyma-project/prod/warden/operator:1.1.2
+      sizeBytes: 23477328
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/warden/admission@sha256:c26d31ec8d8df598082c9c833ead9393ed0597e83e967d58985f4423b36e67fc
+        - europe-docker.pkg.dev/kyma-project/prod/warden/admission:1.1.2
+      sizeBytes: 23217063
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/coredns/coredns@sha256:10ab4c3a59ed6a1ec921ddc099d5f0975c4799afd71c4ebff8152d09e584dc7e
+      sizeBytes: 23076529
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/europe-docker_pkg_dev/gardener-project/releases/gardener/vpn-client@sha256:8cf772a2699ce9e70e8850ffccf1bbc5b1f5f69d522e859348080e38e42bcaf9
+      sizeBytes: 22126266
+    - names:
+        - >-
+          docker.io/v2fly/v2fly-core@sha256:d06727b221fe8cbaed2dd1d23f9d8270cb6581dc1c2c2949bd4d04d4c332eee3
+        - docker.io/v2fly/v2fly-core:latest
+      sizeBytes: 22094277
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/kim-snatch@sha256:bc0d47b0e52f9957b6b75156f47664c2efb510f71ba893fb487b3397f48bbdd6
+        - europe-docker.pkg.dev/kyma-project/prod/kim-snatch:1.0.9
+      sizeBytes: 21985175
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/metrics-server/metrics-server@sha256:740060e6e48b2c746e85d0cfb985cf2c2fb302b6334904241f949b7431778e8d
+      sizeBytes: 21924173
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/btp-manager@sha256:bd232b2a147665fa5d6edbd62a0daa2e54e7e571a1005ed35cd8e46ea903f27c
+        - europe-docker.pkg.dev/kyma-project/prod/btp-manager:1.2.24
+      sizeBytes: 21387306
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/apps/monitoring/kube-state-metrics@sha256:b61bc1b5b65620c0e6b37a8bc77aa6e53b6cb578d0ed0aa2529f784cec50301f
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/apps/monitoring/kube-state-metrics:2.17.0-sap6
+      sizeBytes: 18307839
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/quay_io/prometheus/blackbox-exporter@sha256:99ffc310196e7a80da5ab850b1732c96372d6e6afa70598aef2e960ba1d1896d
+      sizeBytes: 16563572
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/europe-docker_pkg_dev/gardener-project/releases/gardener/network-problem-detector@sha256:a56ae60fc6bdb81cf50e1ab9a8e829a70cbddb7f3579b9494694840821f9456d
+      sizeBytes: 16343792
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/api-gateway/releases/api-gateway-manager@sha256:fb78a95a3dd3f961eb4548ffd9867cf783a4cb9fbdf392e8407af3f2db33ac1b
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/api-gateway/releases/api-gateway-manager:3.4.1
+      sizeBytes: 16332774
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/sig-storage/livenessprobe@sha256:a028c3faa34704f1a669b3e270105f94e43e6f437dff7c8ebda9f571a8f501e3
+      sizeBytes: 15087327
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/sig-storage/csi-node-driver-registrar@sha256:d7c8579c553ec0bb2efa5fc3b7de66d718730ab23910394af5fced1bf22cc09b
+      sizeBytes: 14958250
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/cpa/cpvpa@sha256:8334328504df28ea6eab2399e1706a6a7fabf7391cd47273afd4a2bbe4f51cb5
+      sizeBytes: 14947559
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/cpa/cluster-proportional-autoscaler@sha256:bc5be9858d29652151d43354e606f2c70789d3a3761998bd75df9198ba9728d1
+      sizeBytes: 13097529
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/quay_io/prometheus/node-exporter@sha256:a0c600b24155368740594538f04abc8e83168b568b91f73eb4e5ca6d685dc3ed
+      sizeBytes: 12894458
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/apps/victoriametrics/vmagent@sha256:edca14091b6c6d4404c3355123eeebfcc4a18c0407af72450cefb331be48f261
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/apps/victoriametrics/vmagent:1.132.0-sap0
+      sizeBytes: 10692100
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/runtime-watcher@sha256:bdaef5673fac3456ed4c11c49a239b78d649158aff8652267dbda582c29cad62
+        - europe-docker.pkg.dev/kyma-project/prod/runtime-watcher:2.0.9
+      sizeBytes: 10686154
+    - names:
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/connectivity-proxy/utility@sha256:5300e0d50b2d35516cdd04bb8335937927d2ef21d0f11c6d60e8c137be106307
+        - >-
+          europe-docker.pkg.dev/kyma-project/prod/connectivity-proxy/utility:0.0.1
+      sizeBytes: 5178936
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/europe-docker_pkg_dev/gardener-project/releases/gardener/alpine-conntrack@sha256:78af1e338e7bd65c566e2edf298daae4fba78edbde12aadbe19c7ba504aa726a
+      sizeBytes: 3741543
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/europe-docker_pkg_dev/gardener-project/releases/gardener/apiserver-proxy@sha256:d3b9d9af4f420682fda692211a170a52702efb0ee3a3a12e1532f6ff10e2e764
+      sizeBytes: 3528417
+    - names:
+        - >-
+          europe-docker.pkg.dev/sap-se-gcp-k8s-l-delivery/releases-live-public/registry_k8s_io/pause@sha256:b209e0a1042198af58cc7701822c98c8618bc59899b224f7fb431e5bd6306b7e
+      sizeBytes: 307776
+  runtimeHandlers:
+    - name: ''
+      features:
+        recursiveReadOnlyMounts: true
+        userNamespaces: true
+    - name: runc
+      features:
+        recursiveReadOnlyMounts: true
+        userNamespaces: true
+  features:
+    supplementalGroupsPolicy: true
